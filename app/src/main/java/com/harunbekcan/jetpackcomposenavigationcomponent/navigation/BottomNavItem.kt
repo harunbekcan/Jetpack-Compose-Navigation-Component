@@ -3,8 +3,8 @@ package com.harunbekcan.jetpackcomposenavigationcomponent.navigation
 import com.harunbekcan.jetpackcomposenavigationcomponent.R
 import com.harunbekcan.jetpackcomposenavigationcomponent.utils.Constants.CATEGORY_FAVORITES
 import com.harunbekcan.jetpackcomposenavigationcomponent.utils.Constants.CATEGORY_HOME
-import com.harunbekcan.jetpackcomposenavigationcomponent.utils.Constants.MESSAGES_SCREEN
-import com.harunbekcan.jetpackcomposenavigationcomponent.utils.Constants.PROFILE_SCREEN
+import com.harunbekcan.jetpackcomposenavigationcomponent.utils.Constants.CATEGORY_MESSAGES
+import com.harunbekcan.jetpackcomposenavigationcomponent.utils.Constants.CATEGORY_PROFILE
 
 sealed class BottomNavItem(
     val title: String,
@@ -24,13 +24,13 @@ sealed class BottomNavItem(
     )
 
     object Messages : BottomNavItem(
-        title = MESSAGES_SCREEN,
+        title = CATEGORY_MESSAGES,
         image = R.drawable.ic_messages,
         route = ScreenRoutes.Messages.route
     )
 
     object Profile : BottomNavItem(
-        title = PROFILE_SCREEN,
+        title = CATEGORY_PROFILE,
         image = R.drawable.ic_profile,
         route = ScreenRoutes.Profile.route
     )
