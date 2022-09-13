@@ -6,8 +6,8 @@ import com.harunbekcan.jetpackcomposenavigationcomponent.utils.Constants.MESSAGE
 import com.harunbekcan.jetpackcomposenavigationcomponent.utils.Constants.PROFILE_SCREEN
 
 sealed class ScreenRoutes(val route : String) {
-    object HomeScreen : ScreenRoutes(HOME_SCREEN)
-    object FavoritesScreen : ScreenRoutes(FAVORITES_SCREEN)
-    object MessagesScreen : ScreenRoutes(MESSAGES_SCREEN)
-    object ProfileScreen : ScreenRoutes(PROFILE_SCREEN)
+    object Home : ScreenRoutes(HOME_SCREEN)
+    object Favorites : ScreenRoutes(FAVORITES_SCREEN)
+    object Messages : ScreenRoutes(MESSAGES_SCREEN)
+    object Profile : ScreenRoutes(PROFILE_SCREEN)
 }
