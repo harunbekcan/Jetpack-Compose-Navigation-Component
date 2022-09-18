@@ -1,5 +1,6 @@
 package com.harunbekcan.jetpackcomposenavigationcomponent.ui.screens
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -13,12 +14,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.harunbekcan.jetpackcomposenavigationcomponent.ui.theme.Blue
+import com.harunbekcan.jetpackcomposenavigationcomponent.ui.theme.DarkBlue
 
 @Composable
 fun HomeScreen() {
     Surface(
         modifier = Modifier.fillMaxSize()
+            .background(DarkBlue)
     ) {
         Column {
             Text(
@@ -29,7 +31,7 @@ fun HomeScreen() {
                 textAlign = TextAlign.Center,
                 fontSize = 44.sp,
                 fontWeight = FontWeight.Bold,
-                color = Blue
+                color = DarkBlue
             )
         }
     }

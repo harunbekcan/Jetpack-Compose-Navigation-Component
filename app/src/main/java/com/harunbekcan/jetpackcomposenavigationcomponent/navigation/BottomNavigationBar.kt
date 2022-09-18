@@ -10,12 +10,11 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.harunbekcan.jetpackcomposenavigationcomponent.ui.theme.LightBlue
-import com.harunbekcan.jetpackcomposenavigationcomponent.ui.theme.Red
-import com.harunbekcan.jetpackcomposenavigationcomponent.ui.theme.White
+import com.harunbekcan.jetpackcomposenavigationcomponent.ui.theme.*
 
 @Composable
 fun BottomNavigationBar(
@@ -41,7 +40,7 @@ fun BottomNavigationBar(
 
                 items.forEach { _ ->
                     BottomNavigation(
-                        backgroundColor = LightBlue
+                        backgroundColor = DarkBlue
                     ) {
                         items.forEach { item ->
                             BottomNavigationItem(
@@ -64,9 +63,9 @@ fun BottomNavigationBar(
                                         restoreState = true
                                     }
                                 },
-                                selectedContentColor = Red,
-                                unselectedContentColor = White,
-                                alwaysShowLabel = false
+                                selectedContentColor = LochMara,
+                                unselectedContentColor = Color.White,
+                                //alwaysShowLabel = false
                             )
                         }
                     }

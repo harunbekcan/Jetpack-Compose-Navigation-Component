@@ -6,10 +6,10 @@ import androidx.activity.compose.setContent
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.ui.graphics.Color
 import androidx.navigation.compose.rememberNavController
 import com.harunbekcan.jetpackcomposenavigationcomponent.navigation.BottomNavigationBar
 import com.harunbekcan.jetpackcomposenavigationcomponent.navigation.NavGraph
-import com.harunbekcan.jetpackcomposenavigationcomponent.ui.theme.Blue
 import com.harunbekcan.jetpackcomposenavigationcomponent.ui.theme.JetpackComposeNavigationComponentTheme
 
 class MainActivity : ComponentActivity() {
@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
                 val navController = rememberNavController()
 
                 Scaffold(
-                    backgroundColor = Blue,
+                    backgroundColor = Color.White,
                     bottomBar = { BottomNavigationBar(navController, bottomBarState) }
                 ){
                     NavGraph(navController = navController , paddingValues = it )
